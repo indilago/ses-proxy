@@ -31,9 +31,14 @@ Run
 ```
 Note you don't need sudo if you're using a high port number.
 
+### Configuration
+Some configuration is supported via environment variables:
+* `CONFIGURATION_SET_NAME` - Sets the SES configuration set to use
+* `EMAIL_TAGS` - SES email tags as comma-separated key/value pairs: `env=prod,foo=bar`
+
 Proxy
 -----
-If you have the `https_proxy` environment variable set, the SES API calls will go through that.
+If you have the `HTTPS_PROXY` environment variable set, the SES API calls will go through that.
 
 If you want to specify another proxy use the `--proxy` flag.
 ```
